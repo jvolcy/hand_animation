@@ -90,6 +90,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 8212720776004003142, guid: 203e9b043100648a483b7396f2d13f3f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a4b81d59dcf9d5141b76550a07d47cc3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 203e9b043100648a483b7396f2d13f3f, type: 3}
 --- !u!4 &1715265614602282308 stripped
