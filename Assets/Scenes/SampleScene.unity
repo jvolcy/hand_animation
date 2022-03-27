@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 37667152}
   - component: {fileID: 37667151}
   - component: {fileID: 37667150}
+  - component: {fileID: 37667155}
+  - component: {fileID: 37667154}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -578,6 +580,30 @@ MonoBehaviour:
       m_SingletonActionBindings: []
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &37667154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37667148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4f079e58604e145a1c9158a83999ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &37667155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37667148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4f079e58604e145a1c9158a83999ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271397878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,6 +1196,7 @@ GameObject:
   - component: {fileID: 1350117542}
   - component: {fileID: 1350117541}
   - component: {fileID: 1350117540}
+  - component: {fileID: 1350117544}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -1497,10 +1524,10 @@ MonoBehaviour:
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
-  m_AllowAnchorControl: 1
+  m_AllowAnchorControl: 0
   m_UseForceGrab: 1
-  m_RotateSpeed: 180
-  m_TranslateSpeed: 1
+  m_RotateSpeed: 0
+  m_TranslateSpeed: 0
   m_AnchorRotateReferenceFrame: {fileID: 0}
 --- !u!114 &1350117543
 MonoBehaviour:
@@ -1612,6 +1639,18 @@ MonoBehaviour:
       m_SingletonActionBindings: []
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &1350117544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350117538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4f079e58604e145a1c9158a83999ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1437255628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,34 +1719,10 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1437255632}
-        m_TargetAssemblyTypeName: PhaserController, Assembly-CSharp
-        m_MethodName: SelectEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1437255632}
-        m_TargetAssemblyTypeName: PhaserController, Assembly-CSharp
-        m_MethodName: SelectExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_Activated:
     m_PersistentCalls:
       m_Calls:
@@ -1820,7 +1835,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7147965647260074866, guid: 0b989828a9766bb4697ac586639d8bff, type: 3}
   barrel: {fileID: 599547665}
-  HandController: {fileID: 37667148}
 --- !u!1 &1578989342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,6 +2080,10 @@ PrefabInstance:
     - target: {fileID: 7147965647260074866, guid: 0b989828a9766bb4697ac586639d8bff, type: 3}
       propertyPath: m_Name
       value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147965647260074866, guid: 0b989828a9766bb4697ac586639d8bff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7564424668509134241, guid: 0b989828a9766bb4697ac586639d8bff, type: 3}
       propertyPath: m_RootOrder
